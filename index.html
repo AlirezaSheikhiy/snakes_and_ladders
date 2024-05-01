@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snakes & Ladders</title>
+    <link rel="icon" type="imagge/x-icon" href="images/icon.png" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <div id="welcome">
+      <h1>Click To Start</h1>
+      <button onclick="start()">PLAY</button>
+    </div>
+    <article><div id="board"></div></article>
+    <aside>
+      <div class="turn">
+        <h2>Player 1</h2>
+        <span id="number">4</span>
+        <div class="playerBox" id="pbox">
+          <img src="images/player1.png" id="player1" draggable="true" />
+        </div>
+      </div>
+      <div class="dice-container">
+        <div class="dice">
+          <div class="cube" id="cube">
+            <div class="side one"></div>
+            <div class="side two"></div>
+            <div class="side three"></div>
+            <div class="side four"></div>
+            <div class="side five"></div>
+            <div class="side six"></div>
+          </div>
+        </div>
+        <div class="roll">
+          <button id="btn-roll" onclick="roll()">Roll</button>
+        </div>
+      </div>
+    </aside>
+  </body>
+</html>
